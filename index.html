@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rofo Coffee Vibes — a curated coffee shopping guide for home baristas, coffee bars, grinders, gifts, and original coffee designs.">
+  <meta name="theme-color" content="#141210">
+  <meta property="og:title" content="Rofo Coffee Vibes | Coffee Gear & Designs">
+  <meta property="og:description" content="Curated coffee gear, home-barista setups, coffee-bar finds, gifts, and original coffee designs.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index,follow">
+  <title>Rofo Coffee Vibes | Coffee Gear & Designs</title>
+  <style>
+    :root{--bg:#141210;--bg2:#1c1916;--card:#211e1a;--gold:#d4af37;--gold2:#f2df9a;--cream:#f7f2e9;--muted:#b8aea1;--line:rgba(212,175,55,.16);--shadow:0 22px 60px rgba(0,0,0,.32)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(212,175,55,.10),transparent 34%),var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6} a{color:inherit;text-decoration:none} button{font:inherit}
+    .serif{font-family:Georgia,"Times New Roman",serif}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(20,18,16,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}.nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:700;letter-spacing:.08em;font-size:13px;text-transform:uppercase;color:var(--gold)}.navlinks{display:flex;gap:22px;font-size:13px;color:#d9d0c4}.navlinks a:hover{color:var(--gold2)}
+    .hero{padding:84px 0 72px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--gold);font-size:11px;letter-spacing:.28em;text-transform:uppercase}.eyebrow:before,.eyebrow:after{content:"";width:34px;height:1px;background:rgba(212,175,55,.45)}h1{font-size:clamp(44px,7vw,78px);line-height:.98;margin:22px auto 0;max-width:900px;letter-spacing:-.035em}.gold{background:linear-gradient(100deg,var(--gold),var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:670px;margin:24px auto 0;color:#c5bbb0;font-size:17px}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:12px;font-weight:700;font-size:14px;transition:.25s}.btn-gold{background:var(--gold);color:#15120e}.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(212,175,55,.18)}.btn-outline{border:1px solid var(--line);background:rgba(212,175,55,.04);color:var(--gold2)}.btn-outline:hover{border-color:rgba(212,175,55,.45);background:rgba(212,175,55,.08)}.btn small,.pill small,.link small{font-size:.72em;opacity:.78;font-weight:600}.fine{font-size:11px;color:#756d63;margin-top:14px}
+    section{padding:62px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 34px}.kicker{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:700}.section-head h2{font-size:clamp(30px,4vw,44px);margin:8px 0 10px;line-height:1.1}.section-head p{color:var(--muted);margin:0}
+    .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.012)),var(--card);border:1px solid rgba(255,255,255,.065);border-radius:20px;padding:24px;box-shadow:var(--shadow);transition:.28s}.card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.26)}.icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(212,175,55,.10);border:1px solid rgba(212,175,55,.14);font-size:20px}.card h3{font-family:Georgia,serif;font-size:23px;margin:18px 0 8px}.card p{font-size:14px;color:#aaa095;margin:0 0 18px}.link{color:var(--gold2);font-weight:700;font-size:13px}.link:hover{text-decoration:underline}
+    .guide{background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:26px;padding:30px}.guide-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 0;border-bottom:1px solid rgba(255,255,255,.06)}.guide-row:last-child{border-bottom:0}.guide-row strong{display:block;font-family:Georgia,serif;font-size:19px}.guide-row span{display:block;color:#9d9489;font-size:13px;margin-top:3px}.pill{white-space:nowrap;border:1px solid var(--line);padding:9px 12px;border-radius:999px;color:var(--gold2);font-size:12px;font-weight:700}
+    .brands{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.brand{padding:15px 10px;text-align:center;border:1px solid rgba(255,255,255,.065);background:#1b1815;border-radius:12px;color:#d9d0c4;font-weight:700;font-size:13px;transition:.2s}.brand:hover{color:var(--gold);border-color:var(--line);transform:translateY(-2px)}
+    .designs{position:relative;overflow:hidden;background:linear-gradient(145deg,#241f19,#171513 60%);border:1px solid rgba(212,175,55,.20);border-radius:30px;padding:42px}.designs:after{content:"☕";position:absolute;right:-15px;bottom:-55px;font-size:230px;opacity:.035;transform:rotate(-12deg)}.designs-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:center}.design-label{display:inline-block;padding:7px 10px;border-radius:999px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.15);color:var(--gold2);font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:700}.designs h2{font-size:clamp(32px,4vw,48px);line-height:1.05;margin:16px 0 12px}.designs p{color:#b9afa4;max-width:620px}.design-box{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.07);border-radius:22px;padding:24px}.design-box .mini{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:700}.design-box h3{font-family:Georgia,serif;font-size:25px;margin:8px 0}.design-box p{font-size:13px;margin-bottom:16px}
+    .notice{margin-top:22px;padding:14px 16px;border-radius:12px;background:rgba(212,175,55,.05);border:1px solid rgba(212,175,55,.11);color:#9f958a;font-size:12px}.footer{padding:48px 0 60px;border-top:1px solid rgba(212,175,55,.14);margin-top:30px;text-align:center}.footer p{max-width:720px;margin:0 auto;color:#777067;font-size:12px}.footer .copy{margin-top:16px;color:#8e8479}.top{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#16120d;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+    @media(max-width:900px){.grid4{grid-template-columns:repeat(2,1fr)}.brands{grid-template-columns:repeat(3,1fr)}.designs-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){.wrap{width:min(100% - 24px,1120px)}.navlinks{display:none}.hero{padding:64px 0 52px}.hero p{font-size:15px}.grid4,.grid3,.grid2{grid-template-columns:1fr}.brands{grid-template-columns:repeat(2,1fr)}.designs{padding:26px}.guide{padding:20px}.guide-row{align-items:flex-start}.pill{font-size:11px}.actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">Rofo Coffee Vibes</a>
+      <div class="navlinks">
+        <a href="#shop">Shop Coffee</a><a href="#guide">Build Your Setup</a><a href="#brands">Brands</a><a href="#designs">My Designs</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Curated Coffee Shopping Guide</div>
+        <h1 class="serif gold">Find Your Perfect<br><em>Home Coffee Setup</em> ☕</h1>
+        <p>Hand-picked coffee gear for espresso lovers, home baristas, beautiful coffee bars, and thoughtful coffee gifts — all in one place.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://www.amazon.com/hz/wishlist/ls/T16OODY3SARD?viewType=grid&linkCode=ll2&tag=coffeestore26-20&linkId=e1cb27dcfb79752208c5dccadad44727&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Browse My Amazon Coffee Picks <small>(paid link)</small> →</a>
+          <a class="btn btn-outline" href="#designs">Shop My Coffee Designs</a>
+        </div>
+        <div class="fine">Amazon affiliate links may earn me a commission at no extra cost to you.</div>
+      </div>
+    </header>
+
+    <section id="shop">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Shop by intent</div><h2 class="serif">Start with what you need</h2><p>Instead of browsing a huge catalog, jump straight to the coffee setup you are trying to build.</p></div>
+        <div class="grid4">
+          <article class="card"><div class="icon">☕</div><h3>Espresso</h3><p>Machines, espresso essentials, and gear for café-style drinks at home.</p><a class="link" href="https://www.amazon.com/s?k=espresso+machine+home+barista&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer">Explore Espresso on Amazon <small>(paid link)</small> →</a></article>
+          <article class="card"><div class="icon">⚙️</div><h3>Grinders</h3><p>Start with the grind — explore burr grinders and coffee tools for better consistency.</p><a class="link" href="https://www.amazon.com/s?k=coffee+grinder+burr&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer">Explore Grinders on Amazon <small>(paid link)</small> →</a></article>
+          <article class="card"><div class="icon">🪴</div><h3>Coffee Bar</h3><p>Build a warm, aesthetic coffee corner with mugs, organizers, trays, and accessories.</p><a class="link" href="https://www.amazon.com/s?k=coffee+bar+accessories+home&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer">Build Your Coffee Bar <small>(paid link)</small> →</a></article>
+          <article class="card"><div class="icon">🎁</div><h3>Coffee Gifts</h3><p>Easy gift ideas for coffee lovers, from useful accessories to cozy coffee-bar finds.</p><a class="link" href="https://www.amazon.com/s?k=coffee+gifts+for+coffee+lovers&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer">Find Coffee Gifts <small>(paid link)</small> →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Build your setup</div><h2 class="serif">A simple home-barista shopping list</h2><p>Use this as a starting point, then mix and match based on your brewing style and budget.</p></div>
+        <div class="guide">
+          <a class="guide-row" href="https://www.amazon.com/s?k=espresso+machine+home+barista&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer"><div><strong>1. Coffee machine</strong><span>Choose espresso, drip, pod, or another brewing style.</span></div><span class="pill">Shop <small>(paid link)</small> →</span></a>
+          <a class="guide-row" href="https://www.amazon.com/s?k=coffee+grinder+burr&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer"><div><strong>2. Grinder</strong><span>A good grinder can make a bigger difference than adding more gadgets.</span></div><span class="pill">Shop <small>(paid link)</small> →</span></a>
+          <a class="guide-row" href="https://www.amazon.com/s?k=coffee+scale+with+timer&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer"><div><strong>3. Coffee scale</strong><span>For repeatable recipes and better control over your brew.</span></div><span class="pill">Shop <small>(paid link)</small> →</span></a>
+          <a class="guide-row" href="https://www.amazon.com/s?k=milk+frother+coffee&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer"><div><strong>4. Frother & drink accessories</strong><span>Finish lattes, cappuccinos, iced coffee, and more.</span></div><span class="pill">Shop <small>(paid link)</small> →</span></a>
+          <a class="guide-row" href="https://www.amazon.com/s?k=coffee+bar+organizer+mug+holder&tag=coffeestore26-20" target="_blank" rel="noopener noreferrer"><div><strong>5. Coffee-bar details</strong><span>Mugs, storage, trays, organizers, and the little touches that make the station yours.</span></div><span class="pill">Shop <small>(paid link)</small> →</span></a>
+        </div>
+        <div class="notice">Tip: Pinterest visitors often arrive with a specific idea in mind. These focused shopping paths are designed to get them from inspiration to the right Amazon search faster.</div>
+      </div>
+    </section>
+
+    <section id="brands">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Shop by brand</div><h2 class="serif">Official Amazon brand stores</h2><p>Prefer a particular brand? Jump directly to the official Amazon storefront.</p></div>
+        <div class="brands">
+          <a class="brand" href="https://amzn.to/4gLRzVv" target="_blank" rel="noopener noreferrer">De'Longhi</a>
+          <a class="brand" href="https://amzn.to/3Tbi66P" target="_blank" rel="noopener noreferrer">Breville</a>
+          <a class="brand" href="https://amzn.to/4h6C1gm" target="_blank" rel="noopener noreferrer">Jura</a>
+          <a class="brand" href="https://amzn.to/4qUvTLp" target="_blank" rel="noopener noreferrer">Gaggia</a>
+          <a class="brand" href="https://amzn.to/4x7B4t3" target="_blank" rel="noopener noreferrer">SMEG</a>
+          <a class="brand" href="https://amzn.to/4x1WTtN" target="_blank" rel="noopener noreferrer">Bosch</a>
+          <a class="brand" href="https://amzn.to/4iIsHjU" target="_blank" rel="noopener noreferrer">PHILIPS</a>
+          <a class="brand" href="https://amzn.to/4gRgFSY" target="_blank" rel="noopener noreferrer">Nespresso</a>
+          <a class="brand" href="https://amzn.to/3UTGYjU" target="_blank" rel="noopener noreferrer">Ninja</a>
+          <a class="brand" href="https://amzn.to/4xusiGq" target="_blank" rel="noopener noreferrer">Flavia</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="designs">
+      <div class="wrap">
+        <div class="designs">
+          <div class="designs-grid">
+            <div>
+              <span class="design-label">Rofo Coffee Vibes Designs</span>
+              <h2 class="serif">Wear the coffee mood.<br><em>Gift the coffee mood.</em></h2>
+              <p>Explore my original coffee-themed designs on TeePublic — made for coffee lovers, creators, students, busy mornings, and anyone who runs better after the first cup.</p>
+              <div class="actions" style="justify-content:flex-start;margin-top:22px">
+                <a class="btn btn-gold" href="https://www.teepublic.com/user/rofocoffeevibes" target="_blank" rel="noopener noreferrer">Visit My TeePublic Store →</a>
+              </div>
+            </div>
+            <div class="design-box">
+              <div class="mini">Featured design</div>
+              <h3>Powered by Coffee and Chaos</h3>
+              <p>A funny minimalist coffee design currently available through the RofoCoffeeVibes TeePublic shop, with products such as apparel and other gift-friendly items.</p>
+              <a class="link" href="https://www.teepublic.com/user/rofocoffeevibes" target="_blank" rel="noopener noreferrer">See the design & available products →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">One more stop</div><h2 class="serif">My full Amazon coffee collection</h2><p>If you already know you want to browse everything I've curated, use the full storefront list.</p><div class="actions"><a class="btn btn-gold" href="https://www.amazon.com/hz/wishlist/ls/T16OODY3SARD?viewType=grid&linkCode=ll2&tag=coffeestore26-20&linkId=e1cb27dcfb79752208c5dccadad44727&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Open Full Amazon Coffee Picks <small>(paid link)</small> →</a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>As an Amazon Associate I earn from qualifying purchases. Amazon links marked “paid link” are affiliate links and may earn me a commission at no extra cost to you. Brand links are intended to lead to official Amazon brand stores.</p>
+      <p class="copy">© 2026 Rofo Coffee Vibes · Brewed for coffee lovers ☕</p>
+    </div>
+  </footer>
+  <a class="top" href="#top" aria-label="Back to top">↑</a>
+</body>
+</html>
